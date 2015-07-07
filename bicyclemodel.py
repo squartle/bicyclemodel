@@ -6,37 +6,32 @@ class Bicycle(object):
         self.prod_cost = prod_cost
 
 class Shop(object):
-    def __init__(self, name, markup, inventory):
+    def __init__(self, name, markup):
         self.name = name
         self.markup = markup
-        self.inventory = inventory
+        self.inventory = {}
+        self.profits = 0
 
-    inventory = {}
+    def stock(self, bicycles):
+        for bicycle in list:
+            price = (markup + 1) * Bicycle.prod_cost
+            self.inventory[bicycle] = price
 
-    def fillInventory(self, ????):
-        
-
-
-    def price(self, Bicycle.model):
-        price = (markup + 1) * Bicycle.prod_cost
-        print price
-
-    def profit(self, markup, Bicycle()):
-        profit = price - prod_cost
-        print profit
+    def sell(self, Bicycle):
+        self.profits += price - Bicycle.prod_cost
+        del self.inventory[Bicycle]
 
 class Customer(object):
-    def __init__(self, firstname, funds, ownership):
+    def __init__(self, firstname, funds):
         self.firstname = firstname
         self.funds = funds
-        self.ownership = ownership
+        self.ownership = ()
 
-    ownership = ()
-
-    def purchase(self, ):
+    def purchase(self, Bicycle):
         if self.funds >= Shop.price:
             self.ownership.append(Bicycle.model)
             self.funds = self.funds - Shop.price
+            sell.Shop(Bicycle)
         else:
             print "I can't afford that!"
 
@@ -47,9 +42,5 @@ cruiserClassy = Bicycle("casual", 12, 694)
 ultimateArmstrong = Bicycle("racing", 8, 743)
 happyHipster = Bicycle("hybrid", 15, 325)
 
-OffRampBikes = Shop("Off Ramp Bicycles", .20, ORBinventory)
-pMultiplier = markup + 1
-ORBinventory = []
-
-def initInventory():
-    for
+OffRampBikes = Shop("Off Ramp Bicycles", .20)
+MikesBikes = Shop("Mike's Bikes", .33)
