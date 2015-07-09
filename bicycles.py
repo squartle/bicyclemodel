@@ -16,7 +16,7 @@ class Shop(object):
         for i in list:
             price = self.markup * i.prod_cost
             self.inventory[i] = round(price, -1)
-        print "%s SAYS: Here's our inventory: " %(self.name)
+        print "%s SAYS: Here's our inventory: " % self.name
         for i in self.inventory.iterkeys():
             print i.name
 
