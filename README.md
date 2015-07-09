@@ -5,9 +5,9 @@ ____
 main.py imports bicycles.py, bicyclemodel.py is "all together" (not sure what the technical term is here... unfactored?).  My machine has Python 3 installed and I was having some trouble getting python 2 and everything was broken and that's the only way I could test it.
 ____
 
-```
-I didn't really do the extra challenge or the extension.  Classes had me totally stumped for this whole week, so I stuck to the basics... but I'm pretty sure I understand the extension in the abstract.
 
+I didn't really do the extra challenge or the extension.  Classes had me totally stumped for this whole week, so I stuck to the basics... but I'm pretty sure I understand the extension in the abstract.
+```
 class Wheel(object):
   def __init__(self, model, weight, cost):
     self.model = model
